@@ -1,26 +1,57 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+<p align="center">
+  <img src="http://dimitridessus.fr/img/logo_circle.png" width="140px" alt="TheiPhoneRetro-Subscribe">
+</p>
 
-## How to use this template
+# Ionic 3 - Episode 11
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+La serie te plait ?
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+Alors n'hésite pas à t'abonner ! Merci :blush:
 
-### With the Ionic CLI:
+<a href="https://www.youtube.com/subscription_center?add_user=theiphoneretro">
+  <img src="http://www.pngall.com/wp-content/uploads/2016/03/Subscribe-PNG-12.png" width="100px" alt="TheiPhoneRetro-Subscribe">
+</a>
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+Dans cette épisode je vous présente comment mettre en place les notifications Push totalement gratuitement à l'aide de la plateforme OneSignal.
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
+Dans la première partie de la vidéo, je vous présente l'utilité des notifications Push. En seconde partie, je vous indique la marche à suivre pour mettre en place un tel système au sein de votre application.
+
+Bien entendu, il est parfaitement possible de suivre cet épisode sous Windows, Mac ou Linux =)
+
+## Au programme 
+
+- Qu'est-ce qu'une notification push ?
+- Les différents types de notification push.
+- Création d'un compte sur OneSignal.
+- Installation du plugin cordova OneSignal.
+- Création d'un projet Firebase - FCM (Android).
+- Génération des certificats APNS (iOS).
+- Utilisation du dashboard admin OneSignal (envoi de notification).
+
+## Vidéo
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=Yn7R_Hl8kwQ"><img src="https://img.youtube.com/vi/Yn7R_Hl8kwQ/0.jpg" alt="Ionic3-TheiPhoneRetro-Episode11"></a>
+</p>
+
+## Instructions
+
+Pour utiliser ce projet il vous suffit de suivre les étapes ci dessous :
+
+- Installer tout les modules requis.
+```{r, engine='sh', count_lines}
+npm install 
 ```
 
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+- Ajouter les plateformes de votre choix.
+```{r, engine='sh', count_lines}
+cordova platform add android
+cordova platform add ios
 ```
 
-Substitute ios for android if not on a Mac.
+- Compilez et lancez le projet.
+```{r, engine='sh', count_lines}
+ionic run <PLATFORM>
+```
 
+- Profitez :tada:
